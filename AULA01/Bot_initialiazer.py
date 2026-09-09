@@ -1,28 +1,10 @@
-BOT_NAME = "RPA_FINANCEIRO_01"
+bot_name: str = "RPA_FINANCEIRO_01"
+max_retries: int = 3
+execution_timeout: float = 30.0
+is_production: bool = False
 
-MAX_RETRIES = 3
-
-EXECUTION_TIMEOUT = 45.5
-
-IS_PRODUCTION = False
-
-print("Iniciando o robo...")
-print("")
-
-print("Nome do robo:", BOT_NAME)
-print("Tipo dessa variavel:", type(BOT_NAME))
-print("")
-
-print("Numero maximo de tentativas:", MAX_RETRIES)
-print("Tipo dessa variavel:", type(MAX_RETRIES))
-print("")
-
-print("Tempo limite (timeout):", EXECUTION_TIMEOUT)
-print("Tipo dessa variavel:", type(EXECUTION_TIMEOUT))
-print("")
-
-print("Esta em producao?", IS_PRODUCTION)
-print("Tipo dessa variavel:", type(IS_PRODUCTION))
-print("")
-
+print(f"Nome do Bot: {bot_name} (Tipo: {type(bot_name)})")
+print(f"Máximo de Tentativas: {max_retries} (Tipo: {type(max_retries)})")
+print(f"Tempo limite de Execução: {execution_timeout} (Tipo: {type(execution_timeout)})")
+print(f"Em Produção: {is_production} (Tipo: {type(is_production)})")
 print("Robo pronto para rodar!")
